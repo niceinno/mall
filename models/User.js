@@ -24,7 +24,7 @@ const userSchema = mongoose.Schema({
     },
     image: String,
     token: {
-        type: toString
+        type: String
     },
     tokenExp: {
         type: Number
@@ -33,4 +33,4 @@ const userSchema = mongoose.Schema({
 
 const User = mongoose.model('User', userSchema)
 
-module.exports = { Product }
+module.exports = { User }
